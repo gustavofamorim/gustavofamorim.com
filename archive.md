@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Blog Archive
+title: Histórico de Postagens
 permalink: /historico/
-banner_image: sample-banner-image-3.jpg
+banner_image: history-banner-img.svg
 ---
 
 <div>

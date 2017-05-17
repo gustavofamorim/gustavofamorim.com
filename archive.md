@@ -2,7 +2,7 @@
 layout: page
 title: Histórico de Postagens
 permalink: /historico/
-banner_image: history-banner-img.svg
+banner_image: history-banner-img-o.svg
 ---
 
 <div>

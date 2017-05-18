@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Blog Archive
-permalink: /archive/
-banner_image: sample-banner-image-3.jpg
+title: Histórico de Postagens
+permalink: /historico/
+banner_image: history-banner-img-o.svg
 ---
 
 <div>
@@ -14,7 +14,7 @@ banner_image: sample-banner-image-3.jpg
       {% endunless %}
       <h5>{{ currentyear }}</h5>
       <ul>
-      {% capture year %}{{currentyear}}{% endcapture %} 
+      {% capture year %}{{currentyear}}{% endcapture %}
     {% endif %}
     <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
 {% endfor %}

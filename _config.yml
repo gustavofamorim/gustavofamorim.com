@@ -4,8 +4,8 @@ title: Gustavo Amorim
 email: gustavofreitasamorim@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
  Um nerd recém formado em Ciência da Computação
-baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "https://blog.gustavofamorim.xyz" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://blog.gustavoamorim.xyz" # the base hostname & protocol for your site
 logourl: /assets/images/logo.png # Site logo
 author: "Gustavo Freitas de Amorim"
 author_thumbnail: "/assets/images/avatar.jpg" # Author avatar

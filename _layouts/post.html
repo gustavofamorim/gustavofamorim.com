@@ -5,8 +5,8 @@ layout: default
 
   {% if page.banner_image %}
   <div class="banner-image">
-    <img 
-        src="{{ "/assets/images/" | append: page.banner_image | prepend: site.baseurl | prepend: site.url }}" 
+    <img
+        src="{{ "/assets/images/" | append: page.banner_image | prepend: site.baseurl | prepend: site.url }}"
         alt="{{ page.banner_image_alt }}">
   </div>
   {% endif %}
@@ -26,13 +26,13 @@ layout: default
       </span> |
     {% endif %}
     <span class="post-date">
-    {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}  
+    {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
     </span>
     </p>
   </header>
 
   <article class="post-content">
-    {{ content }}    
+    {{ content }}
   </article>
 
   {% if site.related_posts %}
@@ -54,15 +54,15 @@ layout: default
   {% endif %}
 
   <div class="author-info">
-    {% if site.theme.show_author_info %}
+    {% if site.theme_config.show_author_info %}
       {% include author.html %}
     {% endif %}
-  
-    {% if site.theme.show_share_buttons %}
+
+    {% if site.theme_config.show_share_buttons %}
       {% include share-buttons.html %}
-    {% endif %}  
+    {% endif %}
   </div>
-  
+
   {% if page.comments %}
     <div class="comments">
         <a href="javascript:;" class="load-view">View Comments...</a>

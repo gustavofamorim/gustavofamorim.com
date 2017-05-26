@@ -1,56 +1,56 @@
 {% capture social_media_li %}
 <ul class="social-media">
 
-    {% if site.theme.social.twitter %}
+    {% if site.theme_config.social.twitter %}
     <li>
-        <a title="{{ site.theme.social.twitter }} on Twitter" 
-            href="https://twitter.com/{{ site.theme.social.twitter }}" 
+        <a title="{{ site.theme_config.social.twitter }} on Twitter"
+            href="https://twitter.com/{{ site.theme_config.social.twitter }}"
             class="twitter wc-img-replace" target="_blank">Twitter</a>
-    </li>   
+    </li>
     {% endif %}
 
-    {% if site.theme.social.gplus %}
+    {% if site.theme_config.social.gplus %}
     <li>
-        <a title="{{ site.theme.social.gplus }} on Google Plus" 
-            href="https://plus.google.com/{{ site.theme.social.gplus }}" 
+        <a title="{{ site.theme_config.social.gplus }} on Google Plus"
+            href="https://plus.google.com/{{ site.theme_config.social.gplus }}"
             class="google wc-img-replace" target="_blank">Google</a>
     </li>
     {% endif %}
 
-    {% if site.theme.social.facebook %}
+    {% if site.theme_config.social.facebook %}
     <li>
-        <a title="{{ site.theme.social.facebook }} on Facebook" 
-            href="https://facebook.com/{{ site.theme.social.facebook }}" 
+        <a title="{{ site.theme_config.social.facebook }} on Facebook"
+            href="https://facebook.com/{{ site.theme_config.social.facebook }}"
             class="facebook wc-img-replace" target="_blank">Facebook</a>
     </li>
     {% endif %}
 
-    {% if site.theme.social.github %}
+    {% if site.theme_config.social.github %}
     <li>
-        <a title="{{ site.theme.social.github }} on Github" 
-            href="https://github.com/{{ site.theme.social.github }}" 
+        <a title="{{ site.theme_config.social.github }} on Github"
+            href="https://github.com/{{ site.theme_config.social.github }}"
             class="github wc-img-replace" target="_blank">Github</a>
     </li>
-    {% endif %} 
+    {% endif %}
 
-    {% if site.theme.social.dribble %}
+    {% if site.theme_config.social.dribble %}
     <li>
-        <a title="{{ site.theme.social.dribble }} on Dribble" 
-            href="https://dribbble.com/{{ site.theme.social.dribble }}" 
+        <a title="{{ site.theme_config.social.dribble }} on Dribble"
+            href="https://dribbble.com/{{ site.theme_config.social.dribble }}"
             class="dribble wc-img-replace" target="_blank">Dribble</a>
-    </li> 
+    </li>
     {% endif %}
 
-    {% if site.theme.social.pinterest %}
+    {% if site.theme_config.social.pinterest %}
     <li>
-        <a title="{{ site.theme.social.pinterest }} on Pinterest" 
-            href="https://www.pinterest.com/{{ site.theme.social.pinterest }}" 
+        <a title="{{ site.theme_config.social.pinterest }} on Pinterest"
+            href="https://www.pinterest.com/{{ site.theme_config.social.pinterest }}"
             class="pinterest wc-img-replace" target="_blank">Pinterest</a>
-    </li> 
+    </li>
     {% endif %}
 
     <li>
-        <a title="Subscribe via RSS" 
+        <a title="Subscribe via RSS"
             href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}"
             class="rss wc-img-replace" target="_blank">
             RSS

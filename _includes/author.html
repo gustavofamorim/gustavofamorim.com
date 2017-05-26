@@ -7,27 +7,27 @@
       alt="{{ site.title }}" width="60" height="60" />
   </a>
   {% endif %}
-  <h5>Author</h4>
+  <h5>Autor</h4>
   <h6>
     <a href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}">
       {{ site.author }}
     </a>
   </h5>
   <p>
-    Find me on
+    Encontre me no
     {% if site.theme_config.social.twitter %}
         <a title="{{ site.theme_config.social.twitter }} on Twitter"
             href="https://twitter.com/{{ site.theme_config.social.twitter }}"
             class="twitter" target="_blank">Twitter</a>
+		/
     {% endif %}
     {% if site.theme_config.social.facebook %}
-        /
         <a title="{{ site.theme_config.social.facebook }} on Facebook"
             href="https://facebook.com/{{ site.theme_config.social.facebook }}"
             class="facebook" target="_blank">Facebook</a>
+		/
     {% endif %}
     {% if site.theme_config.social.gplus %}
-        /
         <a title="{{ site.theme_config.social.gplus }} on Google Plus"
             href="https://plus.google.com/{{ site.theme_config.social.gplus }}"
             class="google" target="_blank">Google</a>

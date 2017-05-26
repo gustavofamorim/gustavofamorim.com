@@ -10,7 +10,7 @@ logourl: /assets/images/logo.png # Site logo
 author: "Gustavo Freitas de Amorim"
 author_thumbnail: "/assets/images/avatar.jpg" # Author avatar
 # Theme customization - please change from the defaults!
-theme:
+theme_config:
   # Color for sidebar bar, links, etc
   highlight_color: "#2980b9"
   # Social media links, leave blank to ignore

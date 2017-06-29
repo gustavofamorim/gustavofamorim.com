@@ -9,7 +9,7 @@ Abaixo estão alguns projetos que já fiz! Alguns pessoais por mera diversão, o
 {% for item in site.data.projects %}
 
 <div class="card">
-  <div class="card-img" onClick="location.href='{{ item.href | prepend: site.baseurl | prepend: site.url }}';">
+  <div class="card-img" onClick="location.href='{{ item.href }}';">
     <img src="{{ item.img }}"/>
   </div>
   <p>{{ item.title }}</p>

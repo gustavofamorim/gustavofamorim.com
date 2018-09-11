@@ -36,7 +36,7 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       chunks: ['app'],
-      filename: 'vendor.js',
+      filename: 'static/js/vendor.js',
       minChunks: Infinity
     })
   ],

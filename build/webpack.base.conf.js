@@ -3,6 +3,7 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+const webpack = require('webpack')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -22,8 +23,23 @@ const createLintingRule = () => ({
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/main.js'
+    app: './src/main.js',
+    vendor: [ 'vue', 'vue-router',
+      '@fortawesome/fontawesome-svg-core',
+      '@fortawesome/free-brands-svg-icons',
+      // '@fortawesome/free-regular-svg-icons', 
+      // '@fortawesome/free-solid-svg-icons',
+      '@fortawesome/vue-fontawesome'
+    ]
   },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      chunks: ['app'],
+      filename: 'vendor.js',
+      minChunks: Infinity
+    })
+  ],
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',

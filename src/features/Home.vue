@@ -32,8 +32,10 @@ export default {
 <style lang="scss" scoped>
 
 .presentation {
-  width: 100vw;
+  padding: 0px 15px;
   height: 100vh;
+  width: calc(100vw - 30px);
+
   display: grid;
   grid-template-areas:
     'image'
@@ -45,8 +47,6 @@ export default {
   grid-row-gap: 5px;
   align-content: center;
   justify-content: center;
-
-  padding: 0px 15px;
 
   .image {
     margin: auto;
@@ -80,6 +80,7 @@ export default {
     grid-column-gap: 10px;
 
     padding: 0px;
+    width: calc(100vw - 30px);
 
     .image {
       width: 200px;

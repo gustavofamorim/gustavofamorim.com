@@ -119,6 +119,11 @@ const webpackConfig = merge(baseWebpackConfig, {
         from: 'robots.txt',
         to: config.build.assetsRoot + '/robots.txt',
         toType: 'file'
+      },
+      {
+        from: 'CNAME',
+        to: config.build.assetsRoot + '/CNAME',
+        toType: 'file'
       }
     ])
   ]

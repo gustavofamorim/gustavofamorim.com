@@ -1,14 +1,14 @@
 <template>
   <section class="presentation">
-    <b-img class="image" src="/static/img/me.png"/>
+    <img class="image" src="/static/img/me.png"/>
     <h1 class="name">Gustavo Freitas de Amorim</h1>
-    <p class="job">Sotware Developer at <b-link target="_blank" href="http://www.themartians.dk/">The Martians</b-link> and serverless enthusiast.</p>
+    <p class="job">Sotware Developer at <a target="_blank" href="http://www.themartians.dk/">The Martians</a> and serverless enthusiast.</p>
     <p class="msg">The revolution can't be stopped! It's coming!</p>
     <p class="contact_h">Contact me at:</p>
     <div class="contact">
-      <b-link class="contact_item" target="_blank" href="https://www.linkedin.com/in/gustavofamorim/"><fa :icon="['fab', 'linkedin']" size="2x"/></b-link>
-      <b-link class="contact_item" target="_blank" href="https://github.com/gustavofamorim"><fa :icon="['fab', 'github']" size="2x"/></b-link>
-      <b-link class="contact_item" target="_blank" href="https://www.instagram.com/gustavof.a/"><fa :icon="['fab', 'instagram']" size="2x"/></b-link>
+      <a class="contact_item" target="_blank" href="https://www.linkedin.com/in/gustavofamorim/"><fa :icon="['fab', 'linkedin']" size="2x"/></a>
+      <a class="contact_item" target="_blank" href="https://github.com/gustavofamorim"><fa :icon="['fab', 'github']" size="2x"/></a>
+      <a class="contact_item" target="_blank" href="https://www.instagram.com/gustavof.a/"><fa :icon="['fab', 'instagram']" size="2x"/></a>
     </div>
   </section>
 </template>
@@ -22,7 +22,6 @@ export default {
 <style lang="scss" scoped>
 
 .presentation {
-  padding: 15px;
   width: 100vw;
   height: 100vh;
   display: grid;

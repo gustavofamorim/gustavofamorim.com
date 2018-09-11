@@ -1,6 +1,6 @@
 <template>
   <section class="presentation">
-    <img class="image" src="/static/img/me.png"/>
+    <img class="image" src="/static/img/me.jpg"/>
     <h1 class="name">Gustavo Freitas de Amorim</h1>
     <p class="job">Sotware Developer at <a target="_blank" href="http://www.themartians.dk/">The Martians</a> and serverless enthusiast.</p>
     <p class="msg">The revolution can't be stopped! It's coming!</p>

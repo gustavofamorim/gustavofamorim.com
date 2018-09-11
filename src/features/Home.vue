@@ -46,8 +46,7 @@ export default {
   align-content: center;
   justify-content: center;
 
-  p { margin-bottom: 5px; }
-  h1 { margin-bottom: 5px; }
+  padding: 0px 15px;
 
   .image {
     margin: auto;
@@ -79,6 +78,8 @@ export default {
       'image contact_h'
       'image contact';
     grid-column-gap: 10px;
+
+    padding: 0px;
 
     .image {
       width: 200px;

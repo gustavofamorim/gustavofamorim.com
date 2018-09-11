@@ -6,9 +6,19 @@
     <p class="msg">The revolution can't be stopped! It's coming!</p>
     <p class="contact_h">Contact me at:</p>
     <div class="contact">
-      <a class="contact_item" target="_blank" href="https://www.linkedin.com/in/gustavofamorim/"><fa :icon="['fab', 'linkedin']" size="2x"/></a>
-      <a class="contact_item" target="_blank" href="https://github.com/gustavofamorim"><fa :icon="['fab', 'github']" size="2x"/></a>
-      <a class="contact_item" target="_blank" href="https://www.instagram.com/gustavof.a/"><fa :icon="['fab', 'instagram']" size="2x"/></a>
+      <a class="contact_item linkedin" target="_blank" href="https://www.linkedin.com/in/gustavofamorim/"><fa :icon="['fab', 'linkedin']" size="2x"/></a>
+      <a class="contact_item github" target="_blank" href="https://github.com/gustavofamorim"><fa :icon="['fab', 'github']" size="2x"/></a>
+      <a class="contact_item instagram" target="_blank" href="https://www.instagram.com/gustavof.a/"><fa :icon="['fab', 'instagram']" size="2x"/></a>
+
+      <svg width="0" height="0">
+        <radialGradient id="rg" r="150%" cx="30%" cy="107%">
+          <stop stop-color="#fdf497" offset="0" />
+          <stop stop-color="#fdf497" offset="0.05" />
+          <stop stop-color="#fd5949" offset="0.45" />
+          <stop stop-color="#d6249f" offset="0.6" />
+          <stop stop-color="#285AEB" offset="0.9" />
+        </radialGradient>
+      </svg>
     </div>
   </section>
 </template>
@@ -54,7 +64,11 @@ export default {
 
   .contact {
     grid-area: contact;
+
     .contact_item { display: inline-block; }
+    .linkedin { color: #2E5FB2; }
+    .github { color: #000; }
+    .instagram svg * { fill: url(#rg); }
   }
 
   @media(min-width: 768px) {

@@ -6,6 +6,7 @@
     <p class="msg">The revolution can't be stopped! It's coming!</p>
     <p class="contact_h">Contact me at:</p>
     <div class="contact">
+      <a class="contact_item email" href="mailto:gustavofreitasamorim@gmail.com"><fa icon="envelope" size="2x"/></a>
       <a class="contact_item linkedin" target="_blank" rel="noopener" href="https://www.linkedin.com/in/gustavofamorim/"><fa :icon="['fab', 'linkedin']" size="2x"/></a>
       <a class="contact_item github" target="_blank" rel="noopener" href="https://github.com/gustavofamorim"><fa :icon="['fab', 'github']" size="2x"/></a>
       <a class="contact_item instagram" target="_blank" rel="noopener" href="https://www.instagram.com/gustavof.a/"><fa :icon="['fab', 'instagram']" size="2x"/></a>
@@ -68,6 +69,7 @@ export default {
     .linkedin { color: #2E5FB2; }
     .github { color: #000; }
     .instagram svg * { fill: url(#rg); }
+    .email { color: blue; }
   }
 
   @media(min-width: 768px) {

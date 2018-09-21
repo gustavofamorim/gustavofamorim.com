@@ -124,7 +124,12 @@ const webpackConfig = merge(baseWebpackConfig, {
         from: 'CNAME',
         to: config.build.assetsRoot + '/CNAME',
         toType: 'file'
-      }
+      },
+      {
+        from: 'google9fec050df6d16a74.html',
+        to: config.build.assetsRoot + '/google9fec050df6d16a74.html',
+        toType: 'file'
+      },
     ])
   ]
 })

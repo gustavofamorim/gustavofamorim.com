@@ -3,7 +3,10 @@
     <img class="image" src="/static/img/me.jpg" alt="Me"/>
     <h1 class="name">Gustavo Freitas de Amorim</h1>
     <p class="job">Sotware Developer at <a target="_blank" rel="noopener" href="http://www.themartians.dk/">The Martians</a> and serverless enthusiast.</p>
-    <p class="msg">The revolution can't be stopped! It's coming!</p>
+    <div class="msg">
+      <p>The revolution can't be stopped! It's coming!</p>
+      <p>You can see some of my projects <router-link :to="{ name: 'Projects' }">here</router-link>.</p>
+    </div>
     <p class="contact_h">Contact me at:</p>
     <div class="contact">
       <a class="contact_item email" href="mailto:gustavofreitasamorim@gmail.com"><fa icon="envelope" size="2x"/></a>

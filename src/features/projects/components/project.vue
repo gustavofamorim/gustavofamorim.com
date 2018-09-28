@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="project">
-    <img :src="image"/>
+    <img :src="image"  :alt="image_alt ? image_alt : name"/>
     <a  :href="url" rel="noopener" target="_blank">
       <h3>{{name}}</h3>
     </a>
@@ -10,7 +10,7 @@
 <script>
 export default {
   props: [
-    'name', 'image', 'url'
+    'name', 'image', 'url', 'image_alt'
   ]
 }
 </script>

@@ -26,17 +26,17 @@ export default {
       },
       {
         name: 'Maanaim Guarapari Website and CMS',
-        image: '/static/img/projects/maanaim_guarapari.png',
+        image: '/static/img/projects/maanaim_guarapari.pjpg',
         url: 'https://maanaimguarapari.com'
       },
       {
         name: 'Escola Megabots',
-        image: '/static/img/projects/megabots.png',
+        image: '/static/img/projects/megabots.pjpg',
         url: 'https://escolamegabots.com'
       },
       {
         name: 'Grupo Castanheira e-commerce',
-        image: '/static/img/projects/castanheira_ecommerce.png',
+        image: '/static/img/projects/castanheira_ecommerce.pjpg',
         url: 'https://castanheira.gustavoamorim.xyz'
       },
       {

@@ -1,21 +1,24 @@
-import Vue from 'vue'
-
 import { library } from '@fortawesome/fontawesome-svg-core'
-// import { fab } from '@fortawesome/free-brands-svg-icons'
-// import { fas } from '@fortawesome/free-solid-svg-icons'
-// import { far } from '@fortawesome/free-regular-svg-icons'
-
-import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
-
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+import {
+  faAt,
+  faArrowLeft
+} from '@fortawesome/free-solid-svg-icons'
+
+import {
+  faLinkedin,
+  faGithub
+} from '@fortawesome/free-brands-svg-icons'
+
 
 library.add(faArrowLeft)
 library.add(faGithub)
 library.add(faLinkedin)
-library.add(faEnvelope)
-library.add(faInstagram)
-// library.add(fas)
-// library.add(far)
+library.add(faAt)
 
-Vue.component('fa', FontAwesomeIcon)
+export default {
+  install (app) {
+    return app.component('fa', FontAwesomeIcon)
+  }
+}

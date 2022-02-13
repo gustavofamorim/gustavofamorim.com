@@ -1,33 +1,18 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Home from '@/features/Home'
-import Projects from '@/features/projects'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
-Vue.use(Router)
+import Home from '../views/Home.vue'
 
-let router = new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: Home
-    },
-    {
-      path: '/projects',
-      name: 'Projects',
-      component: Projects
-    },
-    {
-      path: '*',
-      redirect: { name: 'Home' }
-    }
-  ]
-})
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  }
+]
 
-router.afterEach((to, from) => {
-  /* eslint no-undef: "off" */
-  gtag('set', 'page', to.path)
-  gtag('send', 'pageview')
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes
 })
 
 export default router

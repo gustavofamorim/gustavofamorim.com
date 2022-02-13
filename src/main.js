@@ -1,18 +1,14 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 
-import App from './App'
-
-import router from './router'
-
-import './plugins'
 import './assets/scss/main.scss'
 
-Vue.config.productionTip = false
+import plugins from './plugins'
+import './registerServiceWorker'
 
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  router,
-  components: { App },
-  template: '<App/>'
-})
+import App from './App.vue'
+import router from './router'
+
+createApp(App)
+  .use(plugins)
+  .use(router)
+  .mount('#app')

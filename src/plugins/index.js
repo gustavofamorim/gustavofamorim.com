@@ -1,1 +1,7 @@
-import './fontawesome.js'
+import FontAwesomePlugin from './fontawesome'
+
+export default {
+  install (app) {
+    app.use(FontAwesomePlugin)
+  }
+}

@@ -1,10 +1,22 @@
-@import 'variables.scss';
+:root {
+  --color-fg-default: #24292e;
+  --color-bg-default: #ffffff;
+  --primary-color: #0054B3;
+
+  --link-color: var(--primary-color);
+
+  --font: 'Source Code Pro', sans-serif;
+  --p-font-size: 1em;
+  --h1-font-size: 2.4em;
+}
 
 body {
-  font-family: $font;
   text-align: left;
-  color: $text-color;
+  color: var(--color);
+  font-family: var(--font);
+
   margin: 0px;
+  background-color: var(--color-bg-default);
 }
 
 section {
@@ -13,16 +25,16 @@ section {
 
 h1 {
   margin: 0px 0px 5px 0px;
-  font-size: $h1-size;
+  font-size: var(--h1-font-size);
 }
 
 p {
   margin: 0px 0px 5px 0px;
-  font-size: $p-size;
+  font-size: var(--p-font-size);
 }
 
 a {
-  color: $a-color;
+  color: var(--primary-color);
   text-decoration: none;
   background-color: transparent;
 }

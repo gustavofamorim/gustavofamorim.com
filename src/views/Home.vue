@@ -2,9 +2,8 @@
   <section class="presentation">
     <img class="image" src="/img/me.jpg" alt="Me"/>
     <h1 class="name">Gustavo Amorim</h1>
-    <p class="job">Sotware Engineer at <a target="_blank" rel="noopener" href="https://superviz.com">SuperViz</a>.</p>
+    <p class="job">Software Development Engineer at <a target="_blank" rel="noopener" href="https://aws.amazon.com/">Amazon Web Services</a>.</p>
     <div class="msg">
-      <p>Currently working on realtime web conferencing apps with Vue.js, Amazon Chime, Photon Engine and much more.</p>
       <p>Always learning and sharing my knowledge with my teammates.</p>
     </div>
     <p class="contact_h">Contact me at:</p>
